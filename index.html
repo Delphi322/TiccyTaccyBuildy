@@ -26,14 +26,12 @@
       </div>
     </div>
     <script>
-      
-     
-      var buildUrl = "TiccyTaccyBuildy/Build";
-      var loaderUrl = buildUrl + "/Build.loader.js";
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/test.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Build.data.gz",
-        frameworkUrl: buildUrl + "/Build.framework.js.gz",
-        codeUrl: buildUrl + "/Build.wasm.gz",
+        dataUrl: buildUrl + "/test.data",
+        frameworkUrl: buildUrl + "/test.framework.js",
+        codeUrl: buildUrl + "/test.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "TicTacThighs",
@@ -67,7 +65,7 @@
         canvas.style.width = "1920px";
         canvas.style.height = "1080px";
       }
-      canvas.style.background = "url('" + buildUrl + "/Build.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/test.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
